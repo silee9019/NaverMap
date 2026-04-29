@@ -5,13 +5,14 @@ This project is a PopClip extension for macOS that allows you to search selected
 ## Installation
 
 1. Clone or download this repository.
-2. In the terminal, navigate to the project folder and run the following command to package the PopClip extension:
+2. Make sure the `zip` command is installed. The packaging script creates a `.popclipextz` archive with `zip`.
+3. In the terminal, navigate to the project folder and run the following command to package the PopClip extension:
 
    ```bash
    ./package.sh
    ```
 
-3. Double-click the generated `NaverMap.popclipextz` file to install it in PopClip.
+4. Double-click the generated `NaverMap.popclipextz` file to install it in PopClip.
 
 ## License
 
