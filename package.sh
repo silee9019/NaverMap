@@ -5,6 +5,8 @@ cd "$(dirname "$0")"
 
 readonly EXTENSION_DIR="NaverMap.popclipext"
 readonly OUTPUT_FILE="NaverMap.popclipextz"
+readonly CONFIG_FILE="$EXTENSION_DIR/Config.json"
+readonly ICON_FILE="$EXTENSION_DIR/map-location-pin.png"
 
 # 패키징에 필요한 zip 명령이 없으면 명확한 오류로 중단합니다.
 if ! command -v zip >/dev/null 2>&1; then
@@ -14,6 +16,16 @@ fi
 
 if [ ! -d "$EXTENSION_DIR" ]; then
   echo "오류: 확장 폴더를 찾을 수 없습니다: $EXTENSION_DIR" >&2
+  exit 1
+fi
+
+if [ ! -f "$CONFIG_FILE" ]; then
+  echo "오류: PopClip 설정 파일을 찾을 수 없습니다: $CONFIG_FILE" >&2
+  exit 1
+fi
+
+if [ ! -f "$ICON_FILE" ]; then
+  echo "오류: PopClip 아이콘 파일을 찾을 수 없습니다: $ICON_FILE" >&2
   exit 1
 fi
 
