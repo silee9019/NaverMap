@@ -14,6 +14,11 @@ This project is a PopClip extension for macOS that allows you to search selected
 
 4. Double-click the generated `NaverMap.popclipextz` file to install it in PopClip.
 
+## Packaging notes
+
+- The generated `NaverMap.popclipextz` archive is a local build artifact and is intentionally ignored by Git.
+- The packaging script removes the previous archive before building, omits macOS metadata files, and keeps zip metadata minimal for cleaner rebuilds.
+
 ## License
 
 This project is licensed under the MIT License. You are free to use, modify, and distribute it. All responsibility for the use of this software lies with the user.
