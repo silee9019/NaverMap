@@ -27,4 +27,4 @@ This project is licensed under the MIT License. You are free to use, modify, and
 
 - Name: Sangin Lee
 - Email: [silee9019@gmail.com](mailto:silee9019@gmail.com)
-- GitHub: [github.com/2SANGIN](https://github.com/2SANGIN)
+- GitHub: [github.com/silee9019](https://github.com/silee9019)
