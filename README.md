@@ -18,6 +18,7 @@ This project is a PopClip extension for macOS that allows you to search selected
 
 - The generated `NaverMap.popclipextz` archive is a local build artifact and is intentionally ignored by Git.
 - The packaging script removes the previous archive before building, omits macOS metadata files, and keeps zip metadata minimal for cleaner rebuilds.
+- Before creating the archive, the script checks that `NaverMap.popclipext/Config.json` and `NaverMap.popclipext/map-location-pin.png` exist so incomplete extension bundles fail early with a clear message.
 
 ## License
 
